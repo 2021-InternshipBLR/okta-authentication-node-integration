@@ -1,0 +1,30 @@
+<!doctype html>
+
+<head>
+
+    <title>Face Rec</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="/app.js"></script>
+</head>
+
+<body>
+    <div class="contentarea">
+        <h1>
+            Face Rec
+        </h1>
+        <div class="camera">
+            <video id="video">Video stream not available.</video>
+        </div>
+        <div><button id="startbutton">Take photo</button></div>
+        <canvas id="canvas"></canvas>
+        <div class="output">
+            <img id="photo" alt="The screen capture will appear in this box.">
+        </div>
+        <p id="numoffaces"></p>
+        <form method="POST" action="/okta/logout">
+            <button id="logout-button" type="submit">Logout</button>
+          </form>
+    </div>
+</body>
+
+</html>
